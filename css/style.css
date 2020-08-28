@@ -50,7 +50,7 @@ h6 {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-  margin: 10px;
+  margin: 10px 0px;
   padding: 0 30px;
   /* position: fixed; */
 }
@@ -166,7 +166,7 @@ header {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: -1720px;
+  bottom: -1690px;
   height: 200px;
 }
 
@@ -203,6 +203,7 @@ footer {
   background: hsl(216, 53%, 9%);
   height: 300px;
   padding: 100px 0px;
+  width: 100%;
 }
 
 .small-text {
