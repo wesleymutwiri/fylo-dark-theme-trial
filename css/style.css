@@ -1,0 +1,295 @@
+:root {
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  background: hsl(218, 28%, 13%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Open Sans", sans-serif;
+  word-wrap: break-word;
+  line-height: 1.75;
+  width: 100%;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  background: url("../images/bg-curvy-desktop.svg");
+}
+
+a {
+  color: hsl(0, 0%, 100%);
+  font-family: "Raleway" sans-serif;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway" sans-serif;
+  font-weight: 700;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 0 30px;
+  /* position: fixed; */
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.items li a {
+  padding: 15px 30px;
+}
+
+.icon {
+  font-size: 11px;
+  height: fit-content;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 95vh;
+  margin-top: 15px;
+}
+.reasons {
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  flex-wrap: wrap;
+  width: 375px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.get-started {
+  background: linear-gradient(hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  padding: 10px 60px;
+  border-radius: 30px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+
+.column-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.column-text h3 {
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+.image-text {
+}
+
+.card-small {
+  background: hsl(219, 30%, 18%);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.card-footer {
+  display: grid;
+  grid-template-areas: "image header" "image text";
+  align-items: center;
+  width: max-content;
+}
+
+.profile-text {
+  grid-area: text;
+}
+.profile-header {
+  grid-area: header;
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 40px;
+  grid-area: image;
+}
+
+.testimonies {
+  height: 500px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.support-email {
+  background: hsl(217, 28%, 15%);
+  padding: 40px;
+  text-align: center;
+  width: max-content;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -1720px;
+  height: 200px;
+}
+
+.support-email p {
+  font-size: 12px;
+}
+
+.box-header {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.send-mail {
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.get-started-free {
+  background: linear-gradient(hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  border-radius: 30px;
+  padding: 10px;
+  width: 230px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer {
+  background: hsl(216, 53%, 9%);
+  height: 300px;
+  padding: 100px 0px;
+}
+
+.small-text {
+  font-size: 10px;
+}
+/* common styles to be reused  */
+.text-center {
+  text-align: center;
+}
+
+.center {
+  margin: 0 auto;
+  width: 100%;
+}
+.center img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  height: fit-content;
+  height: 600px;
+}
+
+@media only screen and (max-width: 375px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 14px;
+    padding: 10px;
+  }
+  p {
+    padding: 10px;
+  }
+  .column {
+    display: block;
+  }
+  .container {
+    width: 100%;
+  }
+  .row {
+    display: block;
+  }
+  .support-email {
+    width: 100%;
+    position: initial;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    height: max-content;
+  }
+  .column-image img {
+    width: 100%;
+  }
+  .navbar {
+    margin: 0;
+    width: 100%;
+    padding: 10px 0px;
+    justify-content: space-around;
+  }
+  .items li a {
+    padding: 5px;
+  }
+  .icon img {
+    width: 100px;
+  }
+  header {
+    height: max-content;
+  }
+  header img {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
+  .testimonies {
+    width: 100%;
+  }
+  .card-small {
+      margin-bottom: 40px;
+  }
+  .card {
+    width: 100%;
+  }
+  footer {
+      height: max-content;
+      padding: 10px;
+      margin-top: 300px;
+  }
+}
